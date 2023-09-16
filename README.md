@@ -39,6 +39,14 @@ MCMXFF MC-123
 DUNS MC-123
 ```
 
+If you want specific number of records in excel sheet, use --all <number-of-reords>.
+
+```
+# this will make excel sheet with 10000 records
+$ ./dot.py --all 10000
+# records.xlsx file will be created
+```
+
 # Is The SAFER System Data Public/Free?
 
 Yes! The [data.gov](https://catalog.data.gov/dataset?q=organization:dot-gov+AND+type:dataset&publisher=Federal+Motor+Carrier+Safety+Administration) catalog for the DOT lists the [SAFER - Company Snapshot](https://catalog.data.gov/dataset/safer-company-snapshot-safer-company-snapshot-74afd) as a free public dataset.
@@ -62,8 +70,8 @@ Although this Web Service/HTML API is clunky, the fact that it is part of the op
 Work on this locally however you'd prefer. One option is as follows.
 
 ```
-virtualenv venv
-. ./venv/bin/activate
+python3 -m venv .venv
+. ./.venv/bin/activate
 pip install -r requirements.txt
 ```
 
